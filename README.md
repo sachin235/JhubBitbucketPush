@@ -6,6 +6,7 @@ the user can push notebook to the pre-specified Bitbucket repository. There are 
 environment variables that must be exported. 
 Feel free to use the extension and open issue if you face any problems, or wish to add some utility to the extension.
 
+
 ## Installation
 
 You can currently install this directly from git. 
@@ -15,14 +16,12 @@ Use the following commands to install the extension.
 pip install git+https://github.com/sachin235/JhubBitbucketPush.git
 jupyter serverextension enable --py JhubBitbucketPush
 jupyter nbextension install --py JhubBitbucketPush --user
-
 ```
 
 To enable this extension for all notebooks:
 
 ```
 jupyter nbextension enable JhubBitbucketPush --user --py 
-
 ```
 
 
@@ -33,7 +32,6 @@ import os
 for var in os.environ:
     c.Spawner.env_keep.append(var)
 ```
-
 
 
 ## Steps
@@ -48,7 +46,6 @@ for var in os.environ:
 <!-- * Run jupyter notebook from within your repo directory (eg. gitjupyter here) -->
 * Run jupyterhub using the jupyterhub_config.py file that you have updated using the command <br />
 `jupyterhub -f /<path to jupyterhub_config.py>/jupyterhub_config.py`
-
 
 
 ## Example git configuration
