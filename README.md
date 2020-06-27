@@ -26,6 +26,16 @@ jupyter nbextension enable JhubBitbucketPush --user --py
 ```
 
 
+Add the following code to jupyterhub_config.py to export the environment variables
+
+```
+import os
+for var in os.environ:
+    c.Spawner.env_keep.append(var)
+```
+
+
+
 ## Steps
 
 * Install package using the above commands
@@ -35,7 +45,10 @@ jupyter nbextension enable JhubBitbucketPush --user --py
 * Replace the values in env.sh present in this repo itself (as shown in the example below)
 * Run the command `source ~/JhubBitbucketPush/env.sh`
 * Configure ssh key (present in ~/.ssh/id_rsa.pub or specified location) in the Bitbucket account
-* Run jupyter notebook from within your repo directory (eg. gitjupyter here)
+<!-- * Run jupyter notebook from within your repo directory (eg. gitjupyter here) -->
+* Run jupyterhub using the jupyterhub_config.py file that you have updated using the command <br />
+`jupyterhub -f /<path to jupyterhub_config.py>/jupyterhub_config.py`
+
 
 
 ## Example git configuration
