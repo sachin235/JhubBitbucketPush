@@ -24,7 +24,7 @@ class GitCommitHandler(IPythonHandler):
         git_user = os.path.expandvars(os.environ.get('GIT_USER'))
         git_repo_upstream = os.path.expandvars(os.environ.get('GIT_REMOTE_UPSTREAM'))
         git_branch = git_remote = os.path.expandvars(os.environ.get('GIT_BRANCH_NAME'))
-        git_access_token = os.path.expandvars(os.environ.get('Bitbucket_App_Password'))
+        git_access_token = os.path.expandvars(os.environ.get('BITBUCKET_APP_PASSWORD'))
 
         # get the parent directory for git operations
         git_dir_parent = os.path.dirname(git_dir)

@@ -54,7 +54,7 @@ export GIT_REPO_NAME=gitjupyter <br />
 export GIT_BRANCH_NAME=`<Branch name>` <br />
 export GIT_USER=`<your Bitbucket username>` <br />
 export GIT_EMAIL=`<your email linked with Bitbucket account>` <br />
-export Bitbucket_App_Password=`<app-password generated from Bitbucket user settings>` <br />
+export BITBUCKET_APP_PASSWORD=`<app-password generated from Bitbucket user settings>` <br />
 export GIT_USER_UPSTREAM=`<your Bitbucket username>` <br />
 
 

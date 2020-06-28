@@ -9,7 +9,7 @@ export GIT_REPO_NAME=#your-repo
 export GIT_BRANCH_NAME=#your-branch
 export GIT_USER=#your-gituser
 export GIT_EMAIL=#your-email
-export Bitbucket_App_Password=#app password from Bitbucket user settings
+export BITBUCKET_APP_PASSWORD=#app password from Bitbucket user settings
 export GIT_USER_UPSTREAM=#your-user
 
 
